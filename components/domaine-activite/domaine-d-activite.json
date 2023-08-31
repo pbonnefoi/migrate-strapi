@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_domaine_activite_domaine_d_activite",
+  "info": {
+    "name": "Domaine d'activité",
+    "icon": "stop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "societes",
+  "info": {
+    "name": "Societe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Membres": {
+      "type": "component",
+      "repeatable": true,
+      "component": "membres.membres"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Missions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "domaine-activite.domaine-d-activite"
+    },
+    "Partenaires": {
+      "type": "component",
+      "repeatable": true,
+      "component": "domaine-activite.domaine-d-activite"
+    },
+    "Localisation": {
+      "type": "richtext"
+    },
+    "Map": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "provider": "cloudinary",
+  "providerOptions": {     "cloud_name":"mcduck",
+    "api_key": "794731881813812",
+    "api_secret":"w4Ysp8jZFa1W3YuGbSZyYaob15c"
+  }
+}

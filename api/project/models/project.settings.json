@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "tags": {
+      "collection": "tag"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Budget": {
+      "type": "string"
+    },
+    "Surface": {
+      "type": "string"
+    },
+    "Intervenants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "multi-text.multi-text"
+    },
+    "client": {
+      "via": "projects",
+      "model": "client"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_membres_membres",
+  "info": {
+    "name": "Membres",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Nom": {
+      "type": "string"
+    },
+    "Poste": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

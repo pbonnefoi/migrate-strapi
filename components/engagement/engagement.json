@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_engagement_engagements",
+  "info": {
+    "name": "Engagement",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

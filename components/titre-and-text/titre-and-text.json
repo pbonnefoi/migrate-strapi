@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_titre_and_text_titre_and_texts",
+  "info": {
+    "name": "titreAndText",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

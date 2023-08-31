@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "methodologies",
+  "info": {
+    "name": "Méthodologie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titreProduction": {
+      "type": "string"
+    },
+    "introProduction": {
+      "type": "richtext"
+    },
+    "titreOutils": {
+      "type": "string"
+    },
+    "outils": {
+      "type": "component",
+      "repeatable": true,
+      "component": "domaine-activite.domaine-d-activite"
+    },
+    "titreAndText": {
+      "type": "component",
+      "repeatable": true,
+      "component": "titre-and-text.titre-and-text"
+    },
+    "titreNormes": {
+      "type": "string"
+    }
+  }
+}

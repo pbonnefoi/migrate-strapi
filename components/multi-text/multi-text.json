@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_multi_text_multi_texts",
+  "info": {
+    "name": "MultiText",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "Intervenant": {
+      "type": "string"
+    }
+  }
+}
